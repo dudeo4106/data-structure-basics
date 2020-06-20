@@ -1,0 +1,8 @@
+version: '3'
+services:
+  hello:
+    image: 'gcc:9.2'
+    volumes:
+      - ./hello:/src/hello
+    working_dir: /src/hello
+    command: ./build.sh
