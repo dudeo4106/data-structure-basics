@@ -1,8 +1,14 @@
 version: '3'
 services:
-  hello:
+#  hello:
+#    image: 'gcc:9.2'
+#    volumes:
+#      - ./hello:/src/hello
+#    working_dir: /src/hello
+#    command: ./build.sh
+  one_way_linked_list:
     image: 'gcc:9.2'
     volumes:
-      - ./hello:/src/hello
-    working_dir: /src/hello
+      - ./one_way_linked_list:/src/one_way_linked_list
+    working_dir: /src/one_way_linked_list
     command: ./build.sh
