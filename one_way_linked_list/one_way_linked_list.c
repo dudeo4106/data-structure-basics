@@ -36,8 +36,8 @@ void showAll(Node *root) {
     while (cur != NULL) {
         printf("%d", cur->data);
         cur = cur->next;
+        printf("\n");
     }
-    printf("\n");
 }
 
 int main(void)
