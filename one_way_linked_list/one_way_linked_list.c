@@ -40,8 +40,7 @@ void showAll(Node *root) {
     }
 }
 
-int main(void)
-{
+int main(void) {
     head = (Node*)malloc(sizeof(Node));
     head->next = NULL;
     addFront(head, 2);
