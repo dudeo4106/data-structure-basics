@@ -42,8 +42,7 @@ void show() {
     }
 }
 
-int main(void)
-{
+int main(void) {
     head = (Node*) malloc(sizeof(Node));
     tail = (Node*) malloc(sizeof(Node));
     head->next = tail;
