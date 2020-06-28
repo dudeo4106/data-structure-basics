@@ -18,9 +18,15 @@ services:
 #        - ./stack_array:/src/stack_array
 #      working_dir: /src/stack_array
 #      command: ./build.sh
-    stack_linked_list:
+#    stack_linked_list:
+#        image: 'gcc:9.2'
+#        volumes:
+#          - ./stack_linked_list:/src/stack_linked_list
+#        working_dir: /src/stack_linked_list
+#        command: ./build.sh
+    queue_array:
         image: 'gcc:9.2'
         volumes:
-          - ./stack_linked_list:/src/stack_linked_list
-        working_dir: /src/stack_linked_list
+            - ./queue_array:/src/queue_array
+        working_dir: /src/queue_array
         command: ./build.sh
