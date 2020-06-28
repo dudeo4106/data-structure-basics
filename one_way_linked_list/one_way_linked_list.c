@@ -46,7 +46,7 @@ int main(void)
     head->next = NULL;
     addFront(head, 2);
     addFront(head, 1);
-    addFront(head, 7);
+    addFront(head, 5);
     addFront(head, 9);
     addFront(head, 8);
     removeFront(head);
