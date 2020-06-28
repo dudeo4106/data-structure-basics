@@ -12,9 +12,15 @@ services:
 #      - ./one_way_linked_list:/src/one_way_linked_list
 #    working_dir: /src/one_way_linked_list
 #    command: ./build.sh
-  doubly_linked_list:
-    image: 'gcc:9.2'
-    volumes:
-      - ./doubly_linked_list:/src/doubly_linked_list
-    working_dir: /src/doubly_linked_list
-    command: ./build.sh
+#  doubly_linked_list:
+#    image: 'gcc:9.2'
+#    volumes:
+#      - ./doubly_linked_list:/src/doubly_linked_list
+#    working_dir: /src/doubly_linked_list
+#    command: ./build.sh
+    stack:
+      image: 'gcc:9.2'
+      volumes:
+        - ./stack_array:/src/stack_array
+      working_dir: /src/stack_array
+      command: ./build.sh
