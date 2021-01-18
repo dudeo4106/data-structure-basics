@@ -36,9 +36,15 @@ services:
 #           - ./2020_queue_linked_list:/src/queue_linked_list
 #        working_dir: /src/queue_linked_list
 #        command: ./build.sh
-    selection_sort:
+#    selection_sort:
+#        image: 'gcc:9.2'
+#        volumes:
+#            - ./2021_selection_sort:/src/selection_sort
+#        working_dir: /src/selection_sort
+#        command: ./build.sh
+    quick_sort:
         image: 'gcc:9.2'
         volumes:
-            - ./2021_selection_sort:/src/selection_sort
-        working_dir: /src/selection_sort
+            - ./2021_quick_sort:/src/quick_sort
+        working_dir: /src/quick_sort
         command: ./build.sh
