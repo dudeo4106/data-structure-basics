@@ -48,9 +48,15 @@ services:
 #            - ./2021_quick_sort:/src/quick_sort
 #        working_dir: /src/quick_sort
 #        command: ./build.sh
-    insertion_sort:
+#    insertion_sort:
+#        image: 'gcc:9.2'
+#        volumes:
+#            - ./2021_insertion_sort:/src/insertion_sort
+#        working_dir: /src/insertion_sort
+#        command: ./build.sh
+    counting_sort:
         image: 'gcc:9.2'
         volumes:
-            - ./2021_insertion_sort:/src/insertion_sort
-        working_dir: /src/insertion_sort
+            - ./2021_counting_sort:/src/counting_sort
+        working_dir: /src/counting_sort
         command: ./build.sh
