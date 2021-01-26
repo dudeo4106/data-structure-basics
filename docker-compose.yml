@@ -66,7 +66,7 @@ services:
 #            - ./2021_radix_sort:/src/radix_sort
 #        working_dir: /src/radix_sort
 #        command: ./build.sh
-    radix_sort:
+    binary_tree:
         image: 'gcc:9.2'
         volumes:
             - ./2021_binary_tree:/src/binary_tree
