@@ -66,9 +66,15 @@ services:
 #            - ./2021_radix_sort:/src/radix_sort
 #        working_dir: /src/radix_sort
 #        command: ./build.sh
-    binary_tree:
+#    binary_tree:
+#        image: 'gcc:9.2'
+#        volumes:
+#            - ./2021_binary_tree:/src/binary_tree
+#        working_dir: /src/binary_tree
+#        command: ./build.sh
+    priority_queue:
         image: 'gcc:9.2'
         volumes:
-            - ./2021_binary_tree:/src/binary_tree
-        working_dir: /src/binary_tree
+            - ./2021_priority_queue:/src/priority_queue
+        working_dir: /src/priority_queue
         command: ./build.sh
