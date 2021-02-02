@@ -78,9 +78,15 @@ services:
 #            - ./2021_priority_queue:/src/priority_queue
 #        working_dir: /src/priority_queue
 #        command: ./build.sh
-    sequential_search:
+#    sequential_search:
+#        image: 'gcc:9.2'
+#        volumes:
+#            - ./2021_sequential_search:/src/sequential_search
+#        working_dir: /src/sequential_search
+#        command: ./build.sh
+    binary_search:
         image: 'gcc:9.2'
         volumes:
-            - ./2021_sequential_search:/src/sequential_search
-        working_dir: /src/sequential_search
+            - ./2021_binary_search:/src/binary_search
+        working_dir: /src/binary_search
         command: ./build.sh
