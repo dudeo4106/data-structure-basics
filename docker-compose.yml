@@ -84,9 +84,15 @@ services:
 #            - ./2021_sequential_search:/src/sequential_search
 #        working_dir: /src/sequential_search
 #        command: ./build.sh
-    binary_search:
+#    binary_search:
+#        image: 'gcc:9.2'
+#        volumes:
+#            - ./2021_binary_search:/src/binary_search
+#        working_dir: /src/binary_search
+#        command: ./build.sh
+    graph:
         image: 'gcc:9.2'
         volumes:
-            - ./2021_binary_search:/src/binary_search
-        working_dir: /src/binary_search
+            - ./2021_graph_adjacent_matrix:/src/graph_adjacent_matrix
+        working_dir: /src/graph_adjacent_matrix
         command: ./build.sh
