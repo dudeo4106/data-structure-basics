@@ -90,9 +90,15 @@ services:
 #            - ./2021_binary_search:/src/binary_search
 #        working_dir: /src/binary_search
 #        command: ./build.sh
-    graph:
+#    graph_adjacent_matrix:
+#        image: 'gcc:9.2'
+#        volumes:
+#            - ./2021_graph_adjacent_matrix:/src/graph_adjacent_matrix
+#        working_dir: /src/graph_adjacent_matrix
+#        command: ./build.sh
+    graph_adjacency_list:
         image: 'gcc:9.2'
         volumes:
-            - ./2021_graph_adjacent_matrix:/src/graph_adjacent_matrix
-        working_dir: /src/graph_adjacent_matrix
+            - ./2021_graph_adjacency_list:/src/graph_adjacency_list
+        working_dir: /src/graph_adjacency_list
         command: ./build.sh
