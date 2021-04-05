@@ -39,66 +39,66 @@ services:
 #    selection_sort:
 #        image: 'gcc:9.2'
 #        volumes:
-#            - ./2021_selection_sort:/src/selection_sort
+#            - ./2021-1_selection_sort:/src/selection_sort
 #        working_dir: /src/selection_sort
 #        command: ./build.sh
 #    quick_sort:
 #        image: 'gcc:9.2'
 #        volumes:
-#            - ./2021_quick_sort:/src/quick_sort
+#            - ./2021-1_quick_sort:/src/quick_sort
 #        working_dir: /src/quick_sort
 #        command: ./build.sh
 #    insertion_sort:
 #        image: 'gcc:9.2'
 #        volumes:
-#            - ./2021_insertion_sort:/src/insertion_sort
+#            - ./2021-1_insertion_sort:/src/insertion_sort
 #        working_dir: /src/insertion_sort
 #        command: ./build.sh
 #    counting_sort:
 #        image: 'gcc:9.2'
 #        volumes:
-#            - ./2021_counting_sort:/src/counting_sort
+#            - ./2021-1_counting_sort:/src/counting_sort
 #        working_dir: /src/counting_sort
 #        command: ./build.sh
 #    radix_sort:
 #        image: 'gcc:9.2'
 #        volumes:
-#            - ./2021_radix_sort:/src/radix_sort
+#            - ./2021-1_radix_sort:/src/radix_sort
 #        working_dir: /src/radix_sort
 #        command: ./build.sh
 #    binary_tree:
 #        image: 'gcc:9.2'
 #        volumes:
-#            - ./2021_binary_tree:/src/binary_tree
+#            - ./2021-1_binary_tree:/src/binary_tree
 #        working_dir: /src/binary_tree
 #        command: ./build.sh
 #    priority_queue:
 #        image: 'gcc:9.2'
 #        volumes:
-#            - ./2021_priority_queue:/src/priority_queue
+#            - ./2021-1_priority_queue:/src/priority_queue
 #        working_dir: /src/priority_queue
 #        command: ./build.sh
 #    sequential_search:
 #        image: 'gcc:9.2'
 #        volumes:
-#            - ./2021_sequential_search:/src/sequential_search
+#            - ./2021-1_sequential_search:/src/sequential_search
 #        working_dir: /src/sequential_search
 #        command: ./build.sh
 #    binary_search:
 #        image: 'gcc:9.2'
 #        volumes:
-#            - ./2021_binary_search:/src/binary_search
+#            - ./2021-1_binary_search:/src/binary_search
 #        working_dir: /src/binary_search
 #        command: ./build.sh
 #    graph_adjacent_matrix:
 #        image: 'gcc:9.2'
 #        volumes:
-#            - ./2021_graph_adjacent_matrix:/src/graph_adjacent_matrix
+#            - ./2021-1_graph_adjacent_matrix:/src/graph_adjacent_matrix
 #        working_dir: /src/graph_adjacent_matrix
 #        command: ./build.sh
     graph_adjacency_list:
         image: 'gcc:9.2'
         volumes:
-            - ./2021_graph_adjacency_list:/src/graph_adjacency_list
+            - ./2021-1_graph_adjacency_list:/src/graph_adjacency_list
         working_dir: /src/graph_adjacency_list
         command: ./build.sh
