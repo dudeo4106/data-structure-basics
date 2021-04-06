@@ -96,9 +96,15 @@ services:
 #            - ./2021-1_graph_adjacent_matrix:/src/graph_adjacent_matrix
 #        working_dir: /src/graph_adjacent_matrix
 #        command: ./build.sh
-    graph_adjacency_list:
+#    graph_adjacency_list:
+#        image: 'gcc:9.2'
+#        volumes:
+#            - ./2021-1_graph_adjacency_list:/src/graph_adjacency_list
+#        working_dir: /src/graph_adjacency_list
+#        command: ./build.sh
+    depth_first_search:
         image: 'gcc:9.2'
         volumes:
-            - ./2021-1_graph_adjacency_list:/src/graph_adjacency_list
-        working_dir: /src/graph_adjacency_list
+            - ./2021-2_depth_first_search:/src/depth_first_search
+        working_dir: /src/depth_first_search
         command: ./build.sh
