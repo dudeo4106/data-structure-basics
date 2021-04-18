@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define INF 99999999
-#define MAX_SIZE 1001
 
 typedef struct Node {
 	int data;
