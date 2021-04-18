@@ -108,9 +108,15 @@ services:
 #            - ./2021-2_depth_first_search:/src/depth_first_search
 #        working_dir: /src/depth_first_search
 #        command: ./build.sh
-    breadth_first_search:
+#    breadth_first_search:
+#        image: 'gcc:9.2'
+#        volumes:
+#            - ./2021-2_breadth_first_search:/src/breadth_first_search
+#        working_dir: /src/breadth_first_search
+#        command: ./build.sh
+    binary_search_tree:
         image: 'gcc:9.2'
         volumes:
-            - ./2021-2_breadth_first_search:/src/breadth_first_search
-        working_dir: /src/breadth_first_search
+            - ./2021-2_binary_search_tree:/src/binary_search_tree
+        working_dir: /src/binary_search_tree
         command: ./build.sh
