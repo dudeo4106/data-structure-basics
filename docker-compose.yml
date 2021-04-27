@@ -120,9 +120,15 @@ services:
 #            - ./2021-2_binary_search_tree:/src/binary_search_tree
 #        working_dir: /src/binary_search_tree
 #        command: ./build.sh
-    avl_tree:
+#    avl_tree:
+#        image: 'gcc:9.2'
+#        volumes:
+#            - ./2021-2_avl_tree:/src/avl_tree
+#        working_dir: /src/avl_tree
+#        command: ./build.sh
+    chaining_hash_table:
         image: 'gcc:9.2'
         volumes:
-            - ./2021-2_avl_tree:/src/avl_tree
-        working_dir: /src/avl_tree
+            - ./2021-2_chaining_hash_table:/src/chaining_hash_table
+        working_dir: /src/chaining_hash_table
         command: ./build.sh
