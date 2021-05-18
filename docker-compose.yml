@@ -132,9 +132,15 @@ services:
 #            - ./2021-2_chaining_hash_table:/src/chaining_hash_table
 #        working_dir: /src/chaining_hash_table
 #        command: ./build.sh
-    prims_algorithm:
+#    prims_algorithm:
+#        image: 'gcc:9.2'
+#        volumes:
+#            - ./2021-2_prims_algorithm:/src/prims_algorithm
+#        working_dir: /src/prims_algorithm
+#        command: ./build.sh
+    dijkstra_algorithm:
         image: 'gcc:9.2'
         volumes:
-            - ./2021-2_prims_algorithm:/src/prims_algorithm
-        working_dir: /src/prims_algorithm
+            - ./2021-2_dijkstra_algorithm:/src/dijkstra_algorithm
+        working_dir: /src/dijkstra_algorithm
         command: ./build.sh
