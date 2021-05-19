@@ -138,9 +138,15 @@ services:
 #            - ./2021-2_prims_algorithm:/src/prims_algorithm
 #        working_dir: /src/prims_algorithm
 #        command: ./build.sh
-    dijkstra_algorithm:
+#    dijkstra_algorithm:
+#        image: 'gcc:9.2'
+#        volumes:
+#            - ./2021-2_dijkstra_algorithm:/src/dijkstra_algorithm
+#        working_dir: /src/dijkstra_algorithm
+#        command: ./build.sh
+    segment_tree:
         image: 'gcc:9.2'
         volumes:
-            - ./2021-2_dijkstra_algorithm:/src/dijkstra_algorithm
-        working_dir: /src/dijkstra_algorithm
+            - ./2021-2_segment_tree:/src/segment_tree
+        working_dir: /src/segment_tree
         command: ./build.sh
