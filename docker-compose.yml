@@ -150,9 +150,15 @@ services:
 #            - ./2021-2_segment_tree:/src/segment_tree
 #        working_dir: /src/segment_tree
 #        command: ./build.sh
-    index_tree:
+#    index_tree:
+#        image: 'gcc:9.2'
+#        volumes:
+#            - ./2021-2_index_tree:/src/index_tree
+#        working_dir: /src/index_tree
+#        command: ./build.sh
+    kmp:
         image: 'gcc:9.2'
         volumes:
-            - ./2021-2_index_tree:/src/index_tree
-        working_dir: /src/index_tree
+            - ./2021-2_kmp:/src/kmp
+        working_dir: /src/kmp
         command: ./build.sh
