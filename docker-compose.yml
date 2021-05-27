@@ -156,9 +156,15 @@ services:
 #            - ./2021-2_index_tree:/src/index_tree
 #        working_dir: /src/index_tree
 #        command: ./build.sh
-    kmp:
+#    kmp:
+#        image: 'gcc:9.2'
+#        volumes:
+#            - ./2021-2_kmp:/src/kmp
+#        working_dir: /src/kmp
+#        command: ./build.sh
+    rabin_karp:
         image: 'gcc:9.2'
         volumes:
-            - ./2021-2_kmp:/src/kmp
-        working_dir: /src/kmp
+            - ./2021-2_rabin_karp:/src/rabin_karp
+        working_dir: /src/rabin_karp
         command: ./build.sh
