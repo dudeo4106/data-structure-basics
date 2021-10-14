@@ -23,7 +23,7 @@ void quickSort(int start, int end) {
 }
 
 int main(void) {
-	quickSort(0, SIZE - 1);
-	for (int i = 0; i < SIZE; i++) printf("%d\n", a[i]);
+    quickSort(0, SIZE - 1);
+    for (int i = 0; i < SIZE; i++) printf("%d\n", a[i]);
     return 0;
 }
